@@ -17,12 +17,6 @@ public class Worker extends Thread implements Runnable {
     private Ball _ball;
     private static int _delay = -1;
 
-    ////////////DEBUGGING START///////////////
-
-    private boolean debugOn = false;
-
-    /////////////DEBUGGING END/////////////////
-
     public Worker(AnimationPanel panel, Ball ball) {
         this._panel = panel;
         this._ball = ball;
@@ -34,47 +28,12 @@ public class Worker extends Thread implements Runnable {
 
     @Override
     public void run() {
-        ////////////DEBUGGING START///////////////
-
-        if (debugOn) {
-            System.out.printf(
-                    "%s running with ball %d\n",
-                    Thread.currentThread().getName(),
-                    _ball.getId()
-            );
-        }
-
-        /////////////DEBUGGING END/////////////////
 
         while (true) {
             _panel.setCoordinates(_ball);
             _panel.borderCheck(_ball);
 
-            ////////////DEBUGGING START///////////////
-
-            if (debugOn) {
-                System.out.printf(
-                        "%s sleeping with ball %d\n",
-                        Thread.currentThread().getName(),
-                        _ball.getId()
-                );
-            }
-
-            /////////////DEBUGGING END/////////////////
-
             nap(_delay != -1 ? _delay : 100);
-
-            ////////////DEBUGGING START///////////////
-
-            if (debugOn) {
-                System.out.printf(
-                        "%s awake with ball %d\n",
-                        Thread.currentThread().getName(),
-                        _ball.getId()
-                );
-            }
-
-            /////////////DEBUGGING END/////////////////
 
         }
     }

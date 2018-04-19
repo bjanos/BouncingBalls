@@ -41,16 +41,6 @@ public class AnimationPanel extends JPanel implements ActionListener {
 
     private ExecutorService executorService = Executors.newCachedThreadPool();
 
-    ////////////DEBUGGING START///////////////
-
-    /*
-     * Switches console log printing on and off
-     */
-    private final boolean _debuggingOn = false;
-
-    /////////////DEBUGGING END/////////////////
-
-
     public AnimationPanel() {
         initialisePanel();
         initialiseFields();
@@ -182,19 +172,6 @@ public class AnimationPanel extends JPanel implements ActionListener {
                 currentLocation.setY(currentLocation.getY());
         }
 
-        ////////////DEBUGGING START///////////////
-
-        if (_debuggingOn) {
-            System.out.printf(
-                    "%-23s %s for ball %d\n",
-                    "Set coordinates done in",
-                    Thread.currentThread(),
-                    currentBall.getId()
-            );
-        }
-
-        /////////////DEBUGGING END/////////////////
-
     }
 
 
@@ -224,18 +201,6 @@ public class AnimationPanel extends JPanel implements ActionListener {
             currentDirections.setDirectionY(Direction.POSITIVE);
         }
 
-        ////////////DEBUGGING START///////////////
-
-        if (_debuggingOn) {
-            System.out.printf(
-                    "%-23s %s for ball %d\n",
-                    "Border check done in",
-                    Thread.currentThread(),
-                    currentBall.getId()
-            );
-        }
-
-        /////////////DEBUGGING END/////////////////
     }
 
 }
