@@ -8,7 +8,7 @@ import java.util.Random;
  *
  * @author Janos Benyovszki
  * */
-public class TenColors {
+public class Colors {
 
     private static final Color[] colors = {
             new Color(33, 199, 30),

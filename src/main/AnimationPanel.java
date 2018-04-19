@@ -95,7 +95,7 @@ public class AnimationPanel extends JPanel implements ActionListener {
                                     random.nextInt(getHeight() - _ballSize)
                             ),
                             _ballSize,
-                            TenColors.createColor(),
+                            Colors.createColor(),
                             new DirectionParameter(
                                     _directionPool[random.nextInt(3)],
                                     _directionPool[random.nextInt(3)]
