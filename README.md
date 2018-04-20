@@ -27,6 +27,6 @@ movements
 
 ## Hands On
 
-![Bouncing Balls] (https://github.com/bjanos/Screenshots/blob/master/BouncingBalls/2018-04-20_14-54-23.png)
+![Bouncing Balls](https://github.com/bjanos/Screenshots/blob/master/BouncingBalls/2018-04-20_14-54-23.png)
 
 
