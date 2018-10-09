@@ -1,5 +1,7 @@
 package main;
 
+import main.ball.Ball;
+
 /**
  * Worker thread updating the location of one ball in a background
  * process. Also checks if the ball reaches the edges of the screen.

@@ -9,6 +9,9 @@ import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import main.ball.*;
+import main.ball.param.*;
+
 /**
  * Main animation panel. Draws an array of balls and moves them around by periodically
  * repainting itself. It relies on worker threads updating the balls coordinates in the

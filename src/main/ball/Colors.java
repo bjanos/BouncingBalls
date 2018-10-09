@@ -1,4 +1,4 @@
-package main;
+package main.ball;
 
 import java.awt.*;
 import java.util.Random;

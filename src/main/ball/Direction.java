@@ -1,11 +1,11 @@
-package main;
+package main.ball;
 
 /**
  * Enum class to control ball direction.
  *
  * @author Janos Benyovszki
  */
-enum Direction {
+public enum Direction {
 
     /**
      * The ball is moving either on the X or Y axis in a positive direction

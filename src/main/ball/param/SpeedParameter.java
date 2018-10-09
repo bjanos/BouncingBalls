@@ -1,4 +1,6 @@
-package main;
+package main.ball.param;
+
+import main.ball.Ball;
 
 /**
  * Encapsulates speed parameters of an individual {@link Ball} object.

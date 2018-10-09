@@ -1,6 +1,8 @@
-package main;
+package main.ball;
 
 import java.awt.*;
+
+import main.ball.param.*;
 
 /**
  * Ball class representing a ball object.

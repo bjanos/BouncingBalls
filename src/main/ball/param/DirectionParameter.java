@@ -1,4 +1,7 @@
-package main;
+package main.ball.param;
+
+import main.ball.Ball;
+import main.ball.Direction;
 
 /**
  * Encapsulates direction parameters of an individual {@link Ball} object.
@@ -6,7 +9,7 @@ package main;
  *
  * @author Janos Benyovszki
  * */
-class DirectionParameter {
+public class DirectionParameter {
 
     private Direction directionX;
     private Direction directionY;
