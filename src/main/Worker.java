@@ -13,7 +13,7 @@ public class Worker extends Thread implements Runnable {
 
     /*
     * Reference to the animation panel. Needed to call its
-    * coordinate setter and border check methods.
+    * coordinate setter and border check methods. 
     * */
     private final AnimationPanel _panel;
     private Ball _ball;
